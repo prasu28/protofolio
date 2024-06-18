@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #444;
+            color: #fff;
+        }
+
+        nav ul {
+            padding: 10px;
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sections */
+        section {
+            padding: 20px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #about {
+            background: #f9f9f9;
+        }
+
+        #about p, #skills ul {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #skills {
+            background: #e6f7ff;
+        }
+
+        #skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #skills ul li {
+            display: inline-block;
+            margin: 10px 20px;
+            padding: 20px 70px;
+            background: #f4f4f4;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+
+        #skills ul li:hover {
+            background: #ddd;
+        }
+
+        /* Projects */
+        #projects {
+            background: #fff0f5;
+        }
+
+        .project-card {
+            background: #f4f4f4;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .project-card img {
+            width: 50%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Contact Form */
+        #contact {
+            background: #fff;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        form button:hover {
+            background: #444;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="prasanna.jpeg" alt="Profile Picture" class="profile-img">
+            <h1>Hi, I'm C.Reddy Prasanna</h1>
+            <p>Welcome to my portfolio!</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <i><p>I am currently pursuing B.Tech 4th year in Computer Science and Engineering at Sree Vidyanikethan Engineering College.</p></i>
+			<p>My interests include developing websites and continuously learning new technologies. I am passionate about creating functional and aesthetically pleasing web applications and am always eager to take on new challenges and improve my skills.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+			    <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>React</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <img src="proj1.png" alt="Project 1">
+                <h3>Traffic Squad Management Website</h3>
+                <p>Created a Traffic Squad Website for displaying theindividual vehical penaliities</p>
+            </div>
+            <div class="project-card">
+                <img src="proj2.png" alt="Project 2">
+                <h3>Temperature Converter Website</h3>
+                <p>Created a website to convert the temperature from one unit to another unit.</p>
+            </div>
+			<div class="project-card">
+                <img src="proj3.png" alt="Project 2">
+                <h3>Landing page</h3>
+                <p>Created a landing page to signup for netflix subscription.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/your-email" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
